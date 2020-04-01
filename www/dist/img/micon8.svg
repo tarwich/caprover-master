@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>pie-chart</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="REVITA-5_dashboard_v03" transform="translate(-68.000000, -1048.000000)" stroke="#909090" stroke-width="3.4">
+            <g id="Group-30" transform="translate(66.000000, 582.000000)">
+                <g id="Group-11" transform="translate(4.000000, 468.000000)">
+                    <g id="pie-chart">
+                        <path d="M32.657,23.613 C29.6817436,30.6491011 22.3785003,34.8364738 14.8032135,33.8496107 C7.22792665,32.8627477 1.24124269,26.9440427 0.167938013,19.3805193 C-0.905366666,11.816996 3.19833366,4.46641116 10.2,1.411" id="Path"></path>
+                        <path d="M34,17 C34,12.4913197 32.2089337,8.16730315 29.0208153,4.97918472 C25.8326968,1.79106629 21.5086803,0 17,0 L17,17 L34,17 Z" id="Path"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

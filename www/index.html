@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Revitalize</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./dist/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="./dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="./dist/css/main.min.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="top-menu">
+            <div class="container-fluid p-0">
+
+                <nav class="navbar navbar-expand-xl">
+                    <div class="logo-holder">
+                        <a class="navbar-brand" href="#"><img src="./dist/img/logo.svg" alt="logo"/></a>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse top-navbar" id="navbarSupportedContent">
+
+
+                        <ul class="navbar-nav ml-auto full-w justify-content-end align-items-center">
+                            <li class="nav-item">
+                                <a class="btn btn-search nav-link"><img src="./dist/img/search.svg" alt="search"/></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link circle-user" href="#"><img src="./dist/img/user.png" alt="user"/></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="nav-link dropdown-toggle" type="button" id="menuAdmin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Melvin Adkins
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuAdmin">
+                                        <a class="dropdown-item" href="#">Option 1</a>
+                                        <a class="dropdown-item" href="#">Option 2</a>
+                                        <a class="dropdown-item" href="#">Option 3</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="left-menu">
+                <a class="left-toggle d-block d-lg-none" href="#">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <ul class="navbar">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html"><img src="./dist/img/micon1.svg" alt="micon1"/>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="network-status.html"><img src="./dist/img/micon2.svg" alt="micon2"/>Network Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="utilization.html"><img src="./dist/img/micon3.svg" alt="micon3"/>Utilization Summary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link toggler" data-toggle="collapse" href="#submenu1" role="button" aria-expanded="false"><img src="./dist/img/micon4.svg" alt="micon4"/>Network Management<i class="fa fa-angle-down"></i></a>
+
+                        <div class="collapse" id="submenu1">
+                            <ul class="navbar">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="network.html"><img src="./dist/img/micon5.svg" alt="micon5"/>User Page</a>
+                                </li>
+                              
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pricing.html"><img src="./dist/img/micon7.svg" alt="micon7"/>Pricing</a>
+                                </li>
+                             
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link toggler" data-toggle="collapse" href="#submenu2" role="button" aria-expanded="false"><img src="./dist/img/micon9.svg" alt="micon9"/>Charger<i class="fa fa-angle-down"></i></a>
+
+                        <div class="collapse" id="submenu2">
+                            <ul class="navbar">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="site-configuration.html"><img src="./dist/img/micon10.svg" alt="micon10"/>Site Configuration Page</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="charger.html"><img src="./dist/img/micon11.svg" alt="micon11"/>Charger Configuration Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reporting.html"><img src="./dist/img/micon12.svg" alt="micon12"/>Reports</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 mb-4 px-lg-2 px-md-0">
+                            <h2>Dashboard</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 col-md-4 col-lg px-1 px-md-2">
+                            <div class="box-color black">
+                                <div class="box-body d-flex justify-content-center align-items-center text-center">
+                                    <label>12</label>
+                                </div>
+                                <div class="box-footer black d-flex justify-content-center align-items-center flex-row">
+                                    <img src="./dist/img/bicon1.svg" alt="bicon1"/>
+                                    <span>Total devices</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6  col-md-4 col-lg px-1 px-md-2">
+                            <div class="box-color green active">
+                                <div class="box-body d-flex justify-content-center align-items-center text-center">
+                                    <label>3</label>
+                                </div>
+                                <div class="box-footer green d-flex justify-content-center align-items-center flex-row">
+                                    <img src="./dist/img/bicon2.svg" alt="bicon2"/>
+                                    <span>Available</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6  col-md-4 col-lg px-1 px-md-2">
+                            <div class="box-color orange">
+                                <div class="box-body d-flex justify-content-center align-items-center text-center">
+                                    <label>2</label>
+                                </div>
+                                <div class="box-footer orange d-flex justify-content-center align-items-center flex-row">
+                                    <img src="./dist/img/bicon3.svg" alt="bicon3"/>
+                                    <span>Busy</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg  px-1 px-md-2">
+                            <div class="box-color red">
+                                <div class="box-body d-flex justify-content-center align-items-center text-center">
+                                    <label>1</label>
+                                </div>
+                                <div class="box-footer red d-flex justify-content-center align-items-center flex-row">
+                                    <img src="./dist/img/bicon4.svg" alt="bicon4"/>
+                                    <span>Faulted</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg px-1 px-md-2">
+                            <div class="box-color yellow">
+                                <div class="box-body d-flex justify-content-center align-items-center text-center">
+                                    <label>3</label>
+                                </div>
+                                <div class="box-footer yellow d-flex justify-content-center align-items-center flex-row">
+                                    <img src="./dist/img/bicon5.svg" alt="bicon5"/>
+                                    <span>Offline</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg px-1 px-md-2">
+                            <div class="box-color blue">
+                                <div class="box-body d-flex justify-content-center align-items-center text-center">
+                                    <label>1</label>
+                                </div>
+                                <div class="box-footer blue d-flex justify-content-center align-items-center flex-row">
+                                    <img src="./dist/img/bicon6.svg" alt="bicon6"/>
+                                    <span>Charging</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-md-4 col-lg px-1 px-md-2">
+                            <div class="box-color grey">
+                                <div class="box-body d-flex justify-content-center align-items-center text-center">
+                                    <label>2</label>
+                                </div>
+                                <div class="box-footer grey d-flex justify-content-center align-items-center flex-row">
+                                    <img src="./dist/img/bicon7.svg" alt="bicon7"/>
+                                    <span>Not Commisioned</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="row">
+                        <div class="col-12 px-3 px-md-2">
+                            <div class="card">
+                                <div class="card-header"> 
+                                    <h3>Chargepoints</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12 col-md-8 px-3 px-md-0">
+                                            <div class="map-holder" style="background-image: url(./dist/img/map.jpg);">
+                                                <div class="position green-position">
+                                                    <span>1</span>
+                                                    <div class="map-tooltip">
+                                                        <div class="map-body d-flex justify-content-center align-items-start flex-column">
+                                                            <h6>RCUSAL200002</h6>
+                                                            <label>Evse ID</label>
+                                                            <h6>06 Jul 2020  10:30</h6>
+                                                            <label>Last Status Time</label>
+                                                            <a href="#">More info</a>
+                                                        </div>
+                                                        <div class="map-footer d-flex justify-content-center align-items-center flex-column" style=" background-image: url(./dist/img/check-white.svg);">
+                                                            <h5>Available</h5>
+                                                            <h6>STATUS</h6>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="position blue-position">
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="position yellow-position">
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="position grey-position2">
+                                                    <span>2</span>
+                                                </div>
+                                                <div class="position green-position2">
+                                                    <span>2</span>
+                                                </div>
+                                                <div class="position yellow-position3">
+                                                    <span>3</span>
+                                                </div>
+                                                <div class="position green-position3">
+                                                    <span>3</span>
+                                                </div>
+                                                <div class="position orange-position2">
+                                                    <span>2</span>
+                                                </div>
+                                                <div class="position grey-position1">
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="position red-position1">
+                                                    <span></span>
+                                                </div>
+                                                <div class="position yellow-position2">
+                                                    <span>2</span>
+                                                </div>
+                                                <div class="position orange-position1">
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="position green-position4">
+                                                    <span>4</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-4">
+                                            <div class="filter-map">
+                                                <h3>Filters</h3>
+
+                                                <form>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="filter1" name="filter1">
+                                                        <label for="filter1">
+                                                            Show All
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="filter2" name="filter2">
+                                                        <label for="filter2">
+                                                            Available Devices<img src="./dist/img/mpin-green.svg" alt="mpin-green"/>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="filter3" name="filter3">
+                                                        <label for="filter3">
+                                                            Busy Devices<img src="./dist/img/mpin-orange.svg" alt="mpin-orange"/>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="filter4" name="filter4">
+                                                        <label for="filter4">
+                                                            Faulted Devices<img src="./dist/img/mpin-red.svg" alt="mpin-red"/>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="filter5" name="filter5">
+                                                        <label for="filter5">
+                                                            Offline Devices<img src="./dist/img/mpin-yellow.svg" alt="mpin-yellow"/>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="filter6" name="filter6">
+                                                        <label for="filter6">
+                                                            Charging Devices<img src="./dist/img/mpin-blue.svg" alt="mpin-blue"/>
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" id="filter7" name="filter7">
+                                                        <label for="filter7">
+                                                            Not Commisioned Devices<img src="./dist/img/mpin-grey.svg" alt="mpin-grey"/>
+                                                        </label>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 px-3 px-md-2">
+                            <div class="card">
+                                <div class="card-header"> 
+                                    <h3>Network Status Summary</h3>
+                                </div>
+                                <div class="card-body  small-padding">
+                                    <img src="./dist/img/chart2.jpg" alt="chart2"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 px-3 px-md-2">
+                            <div class="card">
+                                <div class="card-header"> 
+                                    <h3>Enterprise Status Summary</h3>
+                                </div>
+                                <div class="card-body  small-padding">
+                                    <img src="./dist/img/chart2.jpg" alt="chart2"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script type="text/javascript" src="./dist/js/jquery-3-3-1.min.js"></script>
+        <script type="text/javascript" src="./dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="./dist/js/custom.js"></script>
+
+
+
+    </body>
+</html>

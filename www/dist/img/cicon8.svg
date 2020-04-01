@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="41px" height="25px" viewBox="0 0 41 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group 19 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="REVITA-5_charger_v02" transform="translate(-2639.000000, -1850.000000)" stroke="#6DD400" stroke-width="3">
+            <g id="Group-19-Copy" transform="translate(2641.000000, 1852.000000)">
+                <g id="Group-35" transform="translate(-0.000033, -0.000250)">
+                    <path d="M17.71875,10.5002172 C17.71875,14.4869359 14.4867188,17.7189672 10.5,17.7189672 C6.51328125,17.7189672 3.28125,14.4869359 3.28125,10.5002172 C3.28125,6.51349844 6.51328125,3.28146719 10.5,3.28146719 C14.4867188,3.28146719 17.71875,6.51349844 17.71875,10.5002172 Z" id="Stroke-1"></path>
+                    <line x1="10.5" y1="3.28146719" x2="10.5" y2="0.0002171875" id="Stroke-3"></line>
+                    <line x1="10.5" y1="21.0002172" x2="10.5" y2="17.7189672" id="Stroke-5"></line>
+                    <line x1="17.71875" y1="10.5002172" x2="21" y2="10.5002172" id="Stroke-7"></line>
+                    <line x1="0" y1="10.5002172" x2="3.28125" y2="10.5002172" id="Stroke-9"></line>
+                    <line x1="15.6043781" y1="15.6047266" x2="17.92455" y2="17.9248984" id="Stroke-11"></line>
+                    <line x1="3.07538438" y1="3.07556875" x2="5.39555625" y2="5.39574063" id="Stroke-13"></line>
+                    <line x1="15.6043781" y1="5.39583906" x2="17.92455" y2="3.07566719" id="Stroke-15"></line>
+                    <line x1="3.07538438" y1="17.9248328" x2="5.39555625" y2="15.6046609" id="Stroke-17"></line>
+                    <polyline id="Stroke-3" points="36.6561328 12.33595 31.0001328 17.99195 25.3436328 12.33595"></polyline>
+                    <line x1="31.0001328" y1="3" x2="31.0001328" y2="17.9915" id="Stroke-4"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

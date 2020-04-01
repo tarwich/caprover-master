@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Revitalize</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./dist/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="./dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="./dist/css/main.min.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="top-menu">
+            <div class="container-fluid p-0">
+
+                <nav class="navbar navbar-expand-xl">
+                    <div class="logo-holder">
+                        <a class="navbar-brand" href="#"><img src="./dist/img/logo.svg" alt="logo"/></a>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse top-navbar" id="navbarSupportedContent">
+
+
+                        <ul class="navbar-nav ml-auto full-w justify-content-end align-items-center">
+                            <li class="nav-item">
+                                <a class="btn btn-search nav-link"><img src="./dist/img/search.svg" alt="search"/></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link circle-user" href="#"><img src="./dist/img/user.png" alt="user"/></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="nav-link dropdown-toggle" type="button" id="menuAdmin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Melvin Adkins
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuAdmin">
+                                        <a class="dropdown-item" href="#">Option 1</a>
+                                        <a class="dropdown-item" href="#">Option 2</a>
+                                        <a class="dropdown-item" href="#">Option 3</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="left-menu">
+                <a class="left-toggle d-block d-lg-none" href="#">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <ul class="navbar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><img src="./dist/img/micon1.svg" alt="micon1"/>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="network-status.html"><img src="./dist/img/micon2.svg" alt="micon2"/>Network Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="utilization.html"><img src="./dist/img/micon3.svg" alt="micon3"/>Utilization Summary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link toggler" data-toggle="collapse" href="#submenu1" role="button" aria-expanded="false"><img src="./dist/img/micon4.svg" alt="micon4"/>Network Management<i class="fa fa-angle-down"></i></a>
+
+                        <div class="collapse" id="submenu1">
+                            <ul class="navbar">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="network.html"><img src="./dist/img/micon5.svg" alt="micon5"/>User Page</a>
+                                </li>
+                             
+                                <li class="nav-item">
+                                    <a class="nav-link" href="pricing.html"><img src="./dist/img/micon7.svg" alt="micon7"/>Pricing</a>
+                                </li>
+                              
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link toggler" data-toggle="collapse" href="#submenu2" role="button" aria-expanded="true"><img src="./dist/img/micon9.svg" alt="micon9"/>Charger<i class="fa fa-angle-down"></i></a>
+
+                        <div class="collapse show" id="submenu2">
+                            <ul class="navbar">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="site-configuration.html"><img src="./dist/img/micon10.svg" alt="micon10"/>Site Configuration Page</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="charger.html"><img src="./dist/img/micon11.svg" alt="micon11"/>Charger Configuration Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reporting.html"><img src="./dist/img/micon12.svg" alt="micon12"/>Reports</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>Charger</h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 px-3 px-md-2">
+                            <div class="card">
+                                <div class="card-header d-flex justify-content-center justify-content-md-between align-items-center flex-column flex-md-row"> 
+                                    <h3>Charger List</h3>
+                                    <a class="btn btn-simple btn-line-white" href="#" data-toggle="modal" data-target="#addModal">Add new Charger</a>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="form-holder">
+                                                <form>
+                                                    <div class="row">
+                                                        <div class="col-12 col-md-5">
+                                                            <input type="search" name="search" class="form-control" placeholder="Search..."/>
+                                                            <button class="submit" type="submit"></button>
+                                                        </div>
+                                                        <div class="col-12 col-md-2">
+                                                            <select class="custom-select">
+                                                                <option value="1">Status</option>
+                                                                <option value="2">Option 1</option>
+                                                                <option value="3">Option 2</option>
+                                                                <option value="4">Option 3</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="table-responsive">
+
+                                                <table class="table">
+                                                    <thead>
+                                                        <tr>
+                                                            <th scope="col">Charger name</th>
+                                                            <th scope="col">Site Name</th>
+                                                            <th scope="col">Status</th>
+                                                            <th scope="col">Availability</th>
+                                                            <th scope="col">Charging sesions</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>RCUSAL200002</td>
+                                                            <td>Site Name 01</td>
+                                                            <td><span class="point-color color-green"></span>Available</td>
+                                                            <td>32%</td>
+                                                            <td>25</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>RCUSAL200003</td>
+                                                            <td>Site Name 02</td>
+                                                            <td><span class="point-color color-green"></span>Available</td>
+                                                            <td>45%</td>
+                                                            <td>36</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>RCUSAL566335</td>
+                                                            <td>Site Name 03</td>
+                                                            <td><span class="point-color color-yellow"></span>Offline</td>
+                                                            <td>2%</td>
+                                                            <td>488</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>RCUSAL200014</td>
+                                                            <td>Site Name 04</td>
+                                                            <td><span class="point-color color-blue"></span>Charging</td>
+                                                            <td>78%</td>
+                                                            <td>65</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>RCUSAL200074</td>
+                                                            <td>Site Name 05</td>
+                                                            <td><span class="point-color color-blue"></span>Charging</td>
+                                                            <td>59%</td>
+                                                            <td>77</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>RCUSAL200099</td>
+                                                            <td>Site Name 06</td>
+                                                            <td><span class="point-color color-grey"></span>Not Commisioned</td>
+                                                            <td>0%</td>
+                                                            <td>0</td>
+                                                        </tr>
+
+
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 px-3 px-md-2">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination d-flex justify-content-end align-items-center flex-row">
+                                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                                    <li class="page-item"><a class="page-link number" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link number" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link number" href="#">3</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header"> 
+                                    <h3>Charger</h3>
+                                </div>
+                                <div class="card-body">
+                                    <div class="charger-body">
+                                        <div class="row">
+                                            <div class="col-12 col-md-6 col-lg-3 charger-inner d-flex justify-content-center align-items-center align-items-md-start flex-column">
+                                                <h5>RCUSAL200002</h5>
+                                                <span>Site Name 01</span>
+                                                <span><span class="point-color color-yellow"></span>Offline</span>
+                                                <span class="biger">488 charging sesions</span>
+                                            </div>
+
+                                            <div class="col-12 col-md-6 col-lg-3 chart-img-holder d-flex justify-content-center align-items-center flex-column" style="background-image: url(./dist/img/chart-circle.png);">
+                                                <label>2%</label>
+                                            </div>
+
+                                            <div class="col-12 col-md-12 col-lg-6">
+                                                <div class="row">
+                                                    <div class="col-12 col-md-3 col-lg-3 px-3 px-md-1">
+                                                        <a href="#" class="icon-box d-flex justify-content-center align-items-center flex-column">
+                                                            <img src="./dist/img/cicon1.svg" alt="cicon1"/>
+                                                            <p>remote start</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3 col-lg-3 px-3 px-md-1">
+                                                        <a href="#" class="icon-box d-flex justify-content-center align-items-center flex-column">
+                                                            <img src="./dist/img/cicon2.svg" alt="cicon2"/>
+                                                            <p>remote stop</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3 col-lg-3 px-3 px-md-1">
+                                                        <a href="#" class="icon-box d-flex justify-content-center align-items-center flex-column">
+                                                            <img src="./dist/img/cicon3.svg" alt="cicon3"/>
+                                                            <p>reset</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3 col-lg-3 px-3 px-md-1">
+                                                        <a href="#" class="icon-box d-flex justify-content-center align-items-center flex-column">
+                                                            <img src="./dist/img/cicon4.svg" alt="cicon4"/>
+                                                            <p>change availability</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3 col-lg-3 px-3 px-md-1">
+                                                        <a href="#" class="icon-box d-flex justify-content-center align-items-center flex-column">
+                                                            <img src="./dist/img/cicon5.svg" alt="cicon5"/>
+                                                            <p>Reserve now</p>
+                                                        </a>
+
+                                                    </div>
+                                                    <div class="col-12 col-md-3 col-lg-3 px-3 px-md-1">
+                                                        <a href="#" class="icon-box d-flex justify-content-center align-items-center flex-column">
+                                                            <img src="./dist/img/cicon6.svg" alt="cicon6"/>
+                                                            <p>Cancel reservation</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3 col-lg-3 px-3 px-md-1">
+                                                        <a href="#" class="icon-box d-flex justify-content-center align-items-center flex-column">
+                                                            <img src="./dist/img/cicon7.svg" alt="cicon7"/>
+                                                            <p>change configuration</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3 col-lg-3 px-3 px-md-1">
+                                                        <a href="#" class="icon-box d-flex justify-content-center align-items-center flex-column">
+                                                            <img src="./dist/img/cicon8.svg" alt="cicon8"/>
+                                                            <p>get configuration</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3 col-lg-3 px-3 px-md-1">
+                                                        <a href="#" class="icon-box d-flex justify-content-center align-items-center flex-column">
+                                                            <img src="./dist/img/cicon9.svg" alt="cicon9"/>
+                                                            <p>Unlock connector</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3 col-lg-3 px-3 px-md-1">
+                                                        <a href="#" class="icon-box d-flex justify-content-center align-items-center flex-column">
+                                                            <img src="./dist/img/cicon10.svg" alt="cicon10"/>
+                                                            <p>clear cache</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3 col-lg-3 px-3 px-md-1">
+                                                        <a href="#" class="icon-box d-flex justify-content-center align-items-center flex-column">
+                                                            <img src="./dist/img/cicon11.svg" alt="cicon11"/>
+                                                            <p>Get local list version</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3 col-lg-3 px-3 px-md-1">
+                                                        <a href="#" class="icon-box d-flex justify-content-center align-items-center flex-column">
+                                                            <img src="./dist/img/cicon12.svg" alt="cicon12"/>
+                                                            <p>send local list</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3 col-lg-3 px-3 px-md-1">
+                                                        <a href="#" class="icon-box d-flex justify-content-center align-items-center flex-column">
+                                                            <img src="./dist/img/cicon13.svg" alt="cicon13"/>
+                                                            <p>get diagnostics</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3 col-lg-3 px-3 px-md-1">
+                                                        <a href="#" class="icon-box d-flex justify-content-center align-items-center flex-column">
+                                                            <img src="./dist/img/cicon14.svg" alt="cicon14"/>
+                                                            <p>Update firmware</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3 col-lg-3 px-3 px-md-1">
+                                                        <a href="#" class="icon-box d-flex justify-content-center align-items-center flex-column">
+                                                            <img src="./dist/img/cicon15.svg" alt="cicon15"/>
+                                                            <p>Data transfer</p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-12 col-md-3 col-lg-3 px-3 px-md-1">
+                                                        <a href="#" class="icon-box d-flex justify-content-center align-items-center flex-column">
+                                                            <img src="./dist/img/cicon16.svg" alt="cicon16"/>
+                                                            <p>diagnose</p>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script type="text/javascript" src="./dist/js/jquery-3-3-1.min.js"></script>
+        <script type="text/javascript" src="./dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="./dist/js/custom.js"></script>
+
+
+        <!-- addModal -->
+        <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Add new Charger</h3>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-4 px-3 px-md-1">
+                                    <label>Site name</label>
+                                    <input type="text" name="name" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 px-3 px-md-1">
+                                    <label>Charge Box ID</label>
+                                    <input type="text" name="chargeBox" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 px-3 px-md-1">
+                                    <label>Access</label>
+                                    <input type="text" name="access" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 px-3 px-md-1">
+                                    <label>Registration Status</label>
+                                    <input type="text" name="registrationStatus" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 px-3 px-md-1">
+                                    <label>Reservable</label>
+                                    <input type="text" name="reservable" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 px-3 px-md-1">
+                                    <label>Protocol</label>
+                                    <input type="text" name="protocol" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 px-3 px-md-1">
+                                    <label>Connector Type</label>
+                                    <input type="text" name="connectorType" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 px-3 px-md-1">
+                                    <label>Smart Charging</label>
+                                    <input type="text" name="smartCharging" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 px-3 px-md-1">
+                                    <label>End point IP</label>
+                                    <input type="text" name="endIP" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 px-3 px-md-1">
+                                    <label>End Point</label>
+                                    <input type="text" name="endPoint" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 px-3 px-md-1">
+                                    <label>Latitude</label>
+                                    <input type="text" name="latitude" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 px-3 px-md-1">
+                                    <label>Longitude</label>
+                                    <input type="text" name="longitude" class="form-control"/>
+                                </div>
+
+                                <div class="col-12 px-3 px-md-1">
+                                    <div class="border-bottom-grey"></div>
+                                </div>
+
+
+                                <div class="col-12 col-md-6 col-lg-4 px-3 px-md-1">
+                                    <label>Serial Number</label>
+                                    <input type="text" name="serialNumber" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 px-3 px-md-1">
+                                    <label>Connector ID</label>
+                                    <input type="text" name="connectorID" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 px-3 px-md-1">
+                                    <label>Power (kW)</label>
+                                    <input type="text" name="power" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 px-3 px-md-1">
+                                    <label>Type</label>
+                                    <input type="text" name="type" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 px-3 px-md-1">
+                                    <label>Price Scheme</label>
+                                    <input type="text" name="priceScheme" class="form-control"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 mt-60 text-center">
+                                    <button class="btn btn-submit" type="submit">Add Charger</button>
+                                    <button type="button" class="btn btn-cancel" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </body>
+</html>

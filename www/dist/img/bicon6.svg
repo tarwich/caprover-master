@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="32px" viewBox="0 0 17 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0.0001 0 17 0 17 27 0.0001 27"></polygon>
+        <polygon id="path-3" points="0 32 17 32 17 0 0 0"></polygon>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="REVITA-5_dashboard_v03" transform="translate(-2276.000000, -712.000000)">
+            <g id="Group-22-Copy-6" transform="translate(2193.000000, 330.000000)">
+                <g id="Group-41" transform="translate(83.000000, 382.000000)">
+                    <g id="Group-9">
+                        <g id="Group-3" transform="translate(0.000000, 5.000000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M15.8721,0 L1.1281,0 C0.5051,0 0.0001,0.505 0.0001,1.128 L0.0001,25.872 C0.0001,26.495 0.5051,27 1.1281,27 L15.8721,27 C16.4951,27 17.0001,26.495 17.0001,25.872 L17.0001,1.128 C17.0001,0.505 16.4951,0 15.8721,0 L15.8721,0 Z M2.0001,25 L15.0001,25 L15.0001,2 L2.0001,2 L2.0001,25 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                        </g>
+                        <path d="M12.1055,0 L4.8945,0 C4.4005,0 4.0005,0.4 4.0005,0.895 L4.0005,7 L13.0005,7 L13.0005,0.895 C13.0005,0.4 12.5995,0 12.1055,0 L12.1055,0 Z M6.0005,5 L11.0005,5 L11.0005,2 L6.0005,2 L6.0005,5 Z" id="Fill-4" fill="#FFFFFF"></path>
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Clip-7"></g>
+                        <polygon id="Fill-6" fill="#FFFFFF" mask="url(#mask-4)" points="4 28 13 28 13 25 4 25"></polygon>
+                        <polygon id="Fill-8" fill="#FFFFFF" mask="url(#mask-4)" points="4 24 13 24 13 21 4 21"></polygon>
+                        <polygon id="Fill-8-Copy" fill="#FFFFFF" mask="url(#mask-4)" points="4 20 13 20 13 17 4 17"></polygon>
+                        <polygon id="Fill-8-Copy-2" fill="#FFFFFF" mask="url(#mask-4)" points="4 16 13 16 13 13 4 13"></polygon>
+                        <polygon id="Fill-8-Copy-3" fill="#FFFFFF" mask="url(#mask-4)" points="4 12 13 12 13 9 4 9"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

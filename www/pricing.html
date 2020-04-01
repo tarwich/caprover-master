@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Revitalize</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./dist/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+        <link href="./dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="./dist/css/main.min.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div class="top-menu">
+            <div class="container-fluid p-0">
+
+                <nav class="navbar navbar-expand-xl">
+                    <div class="logo-holder">
+                        <a class="navbar-brand" href="#"><img src="./dist/img/logo.svg" alt="logo"/></a>
+                    </div>
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="collapse navbar-collapse top-navbar" id="navbarSupportedContent">
+
+
+                        <ul class="navbar-nav ml-auto full-w justify-content-end align-items-center">
+                            <li class="nav-item">
+                                <a class="btn btn-search nav-link"><img src="./dist/img/search.svg" alt="search"/></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link circle-user" href="#"><img src="./dist/img/user.png" alt="user"/></a>
+                            </li>
+
+                            <li class="nav-item">
+                                <div class="dropdown">
+                                    <button class="nav-link dropdown-toggle" type="button" id="menuAdmin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Melvin Adkins
+                                    </button>
+                                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="menuAdmin">
+                                        <a class="dropdown-item" href="#">Option 1</a>
+                                        <a class="dropdown-item" href="#">Option 2</a>
+                                        <a class="dropdown-item" href="#">Option 3</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="left-menu">
+                <a class="left-toggle d-block d-lg-none" href="#">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                <ul class="navbar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html"><img src="./dist/img/micon1.svg" alt="micon1"/>Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="network-status.html"><img src="./dist/img/micon2.svg" alt="micon2"/>Network Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="utilization.html"><img src="./dist/img/micon3.svg" alt="micon3"/>Utilization Summary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link toggler" data-toggle="collapse" href="#submenu1" role="button" aria-expanded="true"><img src="./dist/img/micon4.svg" alt="micon4"/>Network Management<i class="fa fa-angle-down"></i></a>
+
+                        <div class="collapse show" id="submenu1">
+                            <ul class="navbar">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="network.html"><img src="./dist/img/micon5.svg" alt="micon5"/>User Page</a>
+                                </li>
+                             
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="pricing.html"><img src="./dist/img/micon7.svg" alt="micon7"/>Pricing</a>
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link toggler" data-toggle="collapse" href="#submenu2" role="button" aria-expanded="false"><img src="./dist/img/micon9.svg" alt="micon9"/>Charger<i class="fa fa-angle-down"></i></a>
+
+                        <div class="collapse" id="submenu2">
+                            <ul class="navbar">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="site-configuration.html"><img src="./dist/img/micon10.svg" alt="micon10"/>Site Configuration Page</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="charger.html"><img src="./dist/img/micon11.svg" alt="micon11"/>Charger Configuration Page</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reporting.html"><img src="./dist/img/micon12.svg" alt="micon12"/>Reports</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12  px-lg-2 px-md-2 px-3">
+                            <h2>Pricing</h2>
+                        </div>
+                        <div class="col-12  px-lg-2 px-md-2 px-3">
+                            <form class="pricing-form">
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 col-lg-4">
+                                        <label>Pricing Scheme name</label>
+                                        <input type="text" name="customerName" class="form-control" placeholder="Site Name (Customer)"/>
+                                    </div>
+                                    <div class="col-12 col-lg-2 col-lg-4 d-flex justify-content-start align-items-end flex-column flex-md-column flex-lg-row">
+
+                                        <button class="btn btn-submit" type="submit">apply</button>
+                                    </div>
+
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6 col-lg-4 px-3 px-md-2">
+                            <div class="card three-elements">
+                                <div class="card-header d-flex justify-content-between align-items-center flex-row"> 
+                                    <h3>Pricing Scheme</h3>
+                                </div>
+                                <div class="card-body small-padding">
+                                    <div class="form-holder customer">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-12 px-3 px-md-1">
+                                                    <select class="custom-select">
+                                                        <option value="1">kWh</option>
+                                                        <option value="2">Option 1</option>
+                                                        <option value="3">Option 2</option>
+                                                        <option value="4">Option 3</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 px-3 px-md-1">
+                                                    <p>Pricing per kWh</p>
+                                                </div>
+                                                <div class="col-12 bottom px-3 px-md-1 d-flex justify-content-between align-items-center flex-row">
+                                                    <h3>$ 0.2 / kWh</h3>
+                                                    <a href="#"><img src="./dist/img/pencil.svg" alt="pencil"/></a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 px-3 px-md-2">
+                            <div class="card three-elements">
+                                <div class="card-header d-flex justify-content-between align-items-center flex-row"> 
+                                    <h3>Dynamic Pricing</h3>
+                                </div>
+                                <div class="card-body small-padding">
+                                    <div class="form-holder customer">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-12 px-3 px-md-1">
+                                                    <select class="custom-select">
+                                                        <option value="1">choose</option>
+                                                        <option value="2">Option 1</option>
+                                                        <option value="3">Option 2</option>
+                                                        <option value="4">Option 3</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12 px-3 px-md-1">
+                                                    <p>Price after 2PM</p>
+                                                </div>
+                                                <div class="col-12 bottom px-3 px-md-1 d-flex justify-content-between align-items-center flex-row">
+                                                    <h3>+ $ 0.2 / kWh</h3>
+                                                    <a href="#"><img src="./dist/img/pencil.svg" alt="pencil"/></a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 px-3 px-md-2">
+                            <div class="card three-elements">
+                                <div class="card-header d-flex justify-content-between align-items-center flex-row"> 
+                                    <h3>Utility Cost</h3>
+                                </div>
+                                <div class="card-body small-padding">
+                                    <div class="form-holder customer">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-12 px-3 px-md-1">
+                                                    <select class="custom-select">
+                                                        <option value="1">choose</option>
+                                                        <option value="2">Option 1</option>
+                                                        <option value="3">Option 2</option>
+                                                        <option value="4">Option 3</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-12 bottom rock-bottom px-3 px-md-1 d-flex justify-content-between align-items-center flex-row">
+                                                    <h3 class="biger">$1224<span>/per site</span></h3>
+                                                    <a href="#"><img src="./dist/img/pencil.svg" alt="pencil"/></a>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 px-3 px-md-2">
+                            <div class="card">
+                                <div class="card-header"> 
+                                    <h3>Pricing Scheme</h3>
+                                </div>
+                                <div class="card-body">
+                                    <form class="site-form">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-3 col-lg-4 px-3 px-md-1">
+                                                <label>Pricing Scheme name</label>
+                                                <input type="text" name="pricingName" class="form-control"/>
+                                            </div>
+                                            <div class="col-12 col-lg-3 col-lg-4 px-3 px-md-1">
+                                                <label>Rate Type:</label>
+                                                <select class="custom-select pricing">
+                                                    <option value="1"></option>
+                                                    <option value="2">Option 1</option>
+                                                    <option value="3">Option 2</option>
+                                                    <option value="4">Option 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-lg-3 col-lg-4 px-3 px-md-1">
+                                                <label>Display Option:</label>
+                                                <input type="text" name="displayOption" class="form-control"/>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-lg-3 col-lg-4 px-3 px-md-1">
+                                                <label>Rate:</label>
+                                                <input type="text" name="rate" class="form-control"/>
+                                            </div>
+                                            <div class="col-12 col-lg-3 col-lg-4 px-3 px-md-1">
+                                                <label>TAX (%):</label>
+                                                <input type="text" name="tax" class="form-control"/>
+                                            </div>
+                                            <div class="col-12 col-lg-3 col-lg-4 px-3 px-md-1">
+                                                <label>Tax Per Energy Unit:</label>
+
+                                                <div class="row">
+                                                    <div class="col-6 text-center">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadio1">True</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 text-center">
+                                                        <div class="custom-control custom-radio">
+                                                            <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                                                            <label class="custom-control-label" for="customRadio2">False</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12  px-3 px-md-1 mt-md-3 d-flex justify-content-end align-items-center flex-column flex-md-row">
+                                            <button class="btn btn-submit" type="submit">SAVE</button>
+                                            <button class="btn btn-submit btn-submit-grey ml-md-3 ml-0" type="submit">Cancel</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 px-3 px-md-2">
+                            <div class="card">
+                                <div class="card-header"> 
+                                    <h3>Dynamic Pricing</h3>
+                                </div>
+                                <div class="card-body">
+                                    <form class="site-form">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-3 col-lg-4 px-3 px-md-1">
+                                                <label>Customer name field:</label>
+                                                <input type="text" name="customerName" class="form-control"/>
+                                            </div>
+                                            <div class="col-12 col-lg-3 col-lg-4 px-3 px-md-1">
+                                                <label>Pricing Scheme:</label>
+                                                <select class="custom-select pricing">
+                                                    <option value="1"></option>
+                                                    <option value="2">Option 1</option>
+                                                    <option value="3">Option 2</option>
+                                                    <option value="4">Option 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-lg-3 col-lg-4 px-3 px-md-1">
+                                                <label>EVSE ID:</label>
+                                                <select class="custom-select pricing">
+                                                    <option value="1"></option>
+                                                    <option value="2">Option 1</option>
+                                                    <option value="3">Option 2</option>
+                                                    <option value="4">Option 3</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 col-lg-3 col-lg-4 px-3 px-md-1">
+                                                <label>Connector:</label>
+                                                <input type="text" name="connector" class="form-control"/>
+                                            </div>
+                                            <div class="col-12 col-lg-6 col-lg-4 px-3 px-md-1 mt-3">
+                                                <div class="form-check pricing">
+                                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                                    <label class="form-check-label" for="defaultCheck1">
+                                                        Default checkbox
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-12  px-3 px-md-1 mt-3 d-flex justify-content-end align-items-center flex-column flex-md-row">
+                                                <button class="btn btn-submit" type="submit">SAVE</button>
+                                                <button class="btn btn-submit btn-submit-grey ml-md-3 ml-0" type="submit">Cancel</button>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 px-3 px-md-2">
+                            <div class="card">
+                                <div class="card-header"> 
+                                    <h3>Utility Cost</h3>
+                                </div>
+                                <div class="card-body">
+                                    <form class="site-form">
+                                        <div class="row">
+                                            <div class="col-12 col-lg-3 col-lg-4 px-3 px-md-1">
+                                                <label>Customer Name Field:*</label>
+                                                <select class="custom-select pricing">
+                                                    <option value="1"></option>
+                                                    <option value="2">Option 1</option>
+                                                    <option value="3">Option 2</option>
+                                                    <option value="4">Option 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-lg-3 col-lg-4 px-3 px-md-1">
+                                                <label>Charger ID Field:*</label>
+                                                <select class="custom-select pricing">
+                                                    <option value="1"></option>
+                                                    <option value="2">Option 1</option>
+                                                    <option value="3">Option 2</option>
+                                                    <option value="4">Option 3</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-12 col-lg-3 col-lg-4 px-3 px-md-1">
+                                                <label>Utility Cost Field:*</label>
+                                                <input type="text" name="costField" class="form-control"/>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12  px-3 px-md-1 mt-3 d-flex justify-content-end align-items-center flex-column flex-md-row">
+                                                <button class="btn btn-submit" type="submit">SAVE</button>
+                                                <button class="btn btn-submit btn-submit-grey ml-md-3 ml-0" type="submit">Cancel</button>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <script type="text/javascript" src="./dist/js/jquery-3-3-1.min.js"></script>
+        <script type="text/javascript" src="./dist/js/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="./dist/js/custom.js"></script>
+
+
+        <!-- addUserkModal -->
+        <div class="modal fade" id="addUserModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Add new User</h3>
+                    </div>
+
+                    <div class="modal-body">
+                        <form>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-6 px-3 px-md-1">
+                                    <label>Customer</label>
+                                    <input type="text" name="customer" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 px-3 px-md-1">
+                                    <label>Role</label>
+                                    <input type="text" name="role" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 px-3 px-md-1">
+                                    <label>First Name</label>
+                                    <input type="text" name="firstName" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 px-3 px-md-1">
+                                    <label>Last Name</label>
+                                    <input type="text" name="lastName" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 px-3 px-md-1">
+                                    <label>Password</label>
+                                    <input type="text" name="password" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 px-3 px-md-1">
+                                    <label>User ID</label>
+                                    <input type="text" name="userID" class="form-control"/>
+                                </div>
+
+
+
+                                <div class="col-12 col-md-6 col-lg-6 px-3 px-md-1 mt-60">
+                                    <label>Street Address</label>
+                                    <input type="text" name="streetAddress" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 px-3 px-md-1 mt-60">
+                                    <label>Zip COde</label>
+                                    <input type="text" name="zipCOde" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 px-3 px-md-1">
+                                    <label>City</label>
+                                    <input type="text" name="city" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 px-3 px-md-1">
+                                    <label>State</label>
+                                    <input type="text" name="state" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 px-3 px-md-1">
+                                    <label>Country</label>
+                                    <input type="text" name="country" class="form-control"/>
+                                </div>
+
+
+                            </div>
+                            <div class="row">
+                                <div class="col-12 mt-60 text-center">
+                                    <button class="btn btn-submit" type="submit">Add User</button>
+                                    <button type="button" class="btn btn-cancel" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- addTagkModal -->
+        <div class="modal fade" id="addTagModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-md modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3>Add new Tag</h3>
+                    </div>
+
+                    <div class="modal-body">
+                        <!--<div class="form-holder customer">-->
+                        <form>
+                            <div class="row">
+                                <div class="col-12 col-md-6 col-lg-6 px-3 px-md-1">
+                                    <label>Customer Name</label>
+                                    <input type="text" name="customerName" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 px-3 px-md-1">
+                                    <label>Tag ID</label>
+                                    <input type="text" name="tagID" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 px-3 px-md-1">
+                                    <label>Parent Tag</label>
+                                    <input type="text" name="parentTag" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 px-3 px-md-1">
+                                    <label>Driver</label>
+                                    <input type="text" name="driver" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 px-3 px-md-1">
+                                    <label>External Tag ID</label>
+                                    <input type="text" name="externalTagID" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 px-3 px-md-1">
+                                    <label>Tag Status</label>
+                                    <input type="text" name="tagStatus" class="form-control"/>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6 px-3 px-md-1">
+                                    <label>Expiry Date</label>
+                                    <input type="text" name="expiryDate" class="form-control expiry"  style="background-image: url(./dist/img/calendar.svg);"/>
+                                </div>
+
+
+                            </div>
+                            <div class="row">
+                                <div class="col-12 mt-60 text-center">
+                                    <button class="btn btn-submit" type="submit">Add Tag</button>
+                                    <button type="button" class="btn btn-cancel" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!--</div>-->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </body>
+</html>
