@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ."
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "caprover": "^2.1.1"
+    "caprover": "^2.1.1",
+    "express": "^4.17.1"
   }
 }

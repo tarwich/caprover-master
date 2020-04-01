@@ -1,7 +1,3 @@
-FROM nginx:mainline-alpine
+FROM node:10
 
-RUN rm /etc/nginx/conf.d/*
-
-ADD main.conf /etc/nginx/conf.d/
-
-ADD www/ /usr/share/www
+ADD . /home/node/app/
